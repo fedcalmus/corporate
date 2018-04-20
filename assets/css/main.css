@@ -81,7 +81,116 @@ textarea {
 body {
     background-color: #242a31;
     color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Background color and color styles start here */
+
+.whiteBg {
+    background-color: #ffffff;
+}
+
+.yellowBg {
+    background-color: #fbcc4b;
+}
+
+.colorYellow {
+    color: #fbcc4b;
+}
+
+/* Background color and color styles end here */
+
+/* Typography & text styles start here */
+
+.fontSizeMd {
+    font-size: 36px;
+}
+
+.extraBold {
+    font-weight: 800;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Typography & text styles end here */
+
+/* Display styles start here */
+
+.flex {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+.flexColoumn {
+    flex-direction: column;
+}
+
+.alignItemCenter {
+    align-items: center;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.spaceAround {
+    justify-content: space-around;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+.flexWrap {
+    flex-wrap: wrap;
+}
+
+.block {
+    display: block;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+/* Display styles end here */
+
+.lineSm {
+    width: 5px;
+}
+
+.lineMd {
+    padding: 83px 80px;
+}
+
+.alignRight {
+    text-align: right;
 }
 
 
 /* General styles end here */
+
+/* Header styles start here */
+
+header {
+    padding-top: 212px;
+    padding-bottom: 172px;
+}
+
+.headerContent div:first-child {
+    padding-top: 50px;
+    margin-right: 60px;
+}
+
+/* Header styles end here */
