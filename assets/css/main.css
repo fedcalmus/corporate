@@ -83,7 +83,7 @@ body {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Background color and color styles start here */
@@ -96,16 +96,49 @@ body {
     background-color: #fbcc4b;
 }
 
+.lightYellowBg{
+    background-color: rgba(255,204,49,0.8);
+}
+
+.greyBg {
+    background-color: #b8b5b4;
+}
+
+.darkBg {
+    background-color: #242a31;
+}
+
 .colorYellow {
     color: #fbcc4b;
+}
+
+.colorWhite {
+    color: #ffffff;
 }
 
 /* Background color and color styles end here */
 
 /* Typography & text styles start here */
 
+.fontsizeXl {
+    font-size: 55px;
+}
+
+.fontSizeL {
+    font-size: 44px;
+}
+
 .fontSizeMd {
-    font-size: 36px;
+    font-size: 30px;
+}
+
+.fontSizeSm {
+    font-size: 24px;
+}
+
+
+.light {
+    font-weight: 300;
 }
 
 .extraBold {
@@ -132,7 +165,7 @@ body {
     display: -webkit-flex;
 }
 
-.flexColoumn {
+.flexColumn {
     flex-direction: column;
 }
 
@@ -171,26 +204,97 @@ body {
 }
 
 .lineMd {
-    padding: 83px 80px;
+    padding: 70px 65px;
+}
+
+.lineL {
+    max-height: 32px;
+    max-width: 642px;
+}
+
+.mainLineH {
+    height: 46px;
+    width: 146px;
 }
 
 .alignRight {
     text-align: right;
 }
 
+.alignCenter {
+    text-align: center;
+}
+
+.alignJustify {
+    text-align: justify;
+}
 
 /* General styles end here */
 
 /* Header styles start here */
 
-header {
-    padding-top: 212px;
+.headerLeft {
+    margin-left: 190px;
+    padding: 186px 100px 172px 100px;
+}
+
+.headerRight {
+    padding-top: 186px;
     padding-bottom: 172px;
 }
 
-.headerContent div:first-child {
-    padding-top: 50px;
+.headerRight div:first-child {
+    padding-top: 20px;
     margin-right: 60px;
 }
 
 /* Header styles end here */
+
+/* Corporate section styles start here */
+
+.corporate {
+    margin-right: 212px;
+
+}
+
+.corporateLeft {
+    margin-left: 190px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.corporateRight, .corporateLeft {
+    padding-bottom: 220px;
+}
+
+.corporateLeft p {
+    max-width: 280px;
+    padding-top: 45px;
+}
+
+.corporateRight {
+    padding-top: 180px;
+
+}
+
+.corporateRight .desc {
+    padding-top: 105px;
+}
+
+.corporate .desc p {
+    max-width: 580px;
+}
+
+/* Corporate section styles end here */
+
+/* About section styles start here */
+
+.about {
+    background-image: url(../img/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1654px;
+}
+
+/* About section styles end here */
