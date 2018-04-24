@@ -108,6 +108,10 @@ body {
     background-color: #242a31;
 }
 
+.blueBg {
+    background-color: #386678;
+}
+
 .colorYellow {
     color: #fbcc4b;
 }
@@ -116,9 +120,17 @@ body {
     color: #ffffff;
 }
 
+.colorDark {
+    color: #242a31;
+}
+
 /* Background color and color styles end here */
 
 /* Typography & text styles start here */
+
+h1 {
+    font-size: 50px;
+}
 
 .fontsizeXl {
     font-size: 55px;
@@ -136,9 +148,16 @@ body {
     font-size: 24px;
 }
 
-
 .light {
     font-weight: 300;
+}
+
+.semiBold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .extraBold {
@@ -199,6 +218,18 @@ body {
 
 /* Display styles end here */
 
+/* Position styles start here */
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+/* Position styles end here */
+
 .lineSm {
     width: 5px;
 }
@@ -207,14 +238,19 @@ body {
     padding: 70px 65px;
 }
 
-.lineL {
-    max-height: 32px;
-    max-width: 642px;
+.lineHL {
+    width: 400px;
+    height: 40px;
 }
 
 .mainLineH {
     height: 46px;
     width: 146px;
+}
+
+.mainLineV {
+    width: 42px;
+    height: 142px;
 }
 
 .alignRight {
@@ -235,7 +271,10 @@ body {
 
 .headerLeft {
     margin-left: 190px;
-    padding: 186px 100px 172px 100px;
+    padding-top: 186px;
+    padding-bottom: 172px;
+    width: 300px;
+    padding-left: 90px;
 }
 
 .headerRight {
@@ -252,15 +291,15 @@ body {
 
 /* Corporate section styles start here */
 
-.corporate {
-    margin-right: 212px;
-
+.corporate .lineHL {
+    right: 0;
+    top: 0;
 }
 
 .corporateLeft {
     margin-left: 190px;
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 300px;
+    padding-left: 90px;
 }
 
 .corporateRight, .corporateLeft {
@@ -274,7 +313,8 @@ body {
 
 .corporateRight {
     padding-top: 180px;
-
+    margin-right: 212px;
+    width: 40%;
 }
 
 .corporateRight .desc {
@@ -294,7 +334,85 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 1654px;
+    height: 1115px;
+}
+
+.aboutLeft .content {
+    width: 300px;
+    max-height: 600px;
+    padding-top: 230px;
+    padding-left: 90px;
+    margin-left: 190px;
+}
+
+.aboutLeft p {
+    padding-top: 105px;
+    padding-bottom: 150px;
+}
+
+.aboutRight {
+    background-color: rgba(85, 159, 188, 0.8);
+    padding: 170px 212px 0 170px;
+}
+
+.aboutRight .mainLineV {
+    margin: 75px 0;
+}
+
+.aboutRight .desc {
+    padding: 60px 0;
+}
+
+.aboutLeft .contact {
+    padding-top: 230px;
+    padding-left: 144px;
+}
+
+.aboutLeft .contact div {
+    padding-bottom: 88px;
+}
+
+.aboutLeft .contact div span:first-child {
+    padding-right: 67px;
+    font-size: 28px;
+}
+
+.logo {
+    padding-top: 80px;
+    padding-bottom: 98px;
+    left: 490px;
+    position: absolute;
+
+}
+
+.logo ul {
+    padding-left: 130px;
+    padding-right: 110px;
+}
+
+.logo ul li {
+    padding-right: 80px;
+}
+
+.logo ul li img {
+    width: 100%;
+}
+
+.logo ul li a:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 /* About section styles end here */
+
+/* Responsive styles start here */
+
+@media only screen and (max-width: 1360px)  {
+    .headerLeft, .corporateLeft, .aboutLeft .content {
+        padding-left: 50px;
+        text-align: left;
+        margin-left: 120px;
+    }
+}
+
+/* Responsive styles end here */
