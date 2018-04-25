@@ -234,7 +234,7 @@ h1 {
 
 /* Position styles end here */
 
-.lineSm {
+.lineVSm {
     width: 5px;
 }
 
@@ -269,16 +269,19 @@ h1 {
     text-align: justify;
 }
 
+.leftCommon {
+    width: 350px;
+    padding-left: 90px;
+    margin-left: 190px;
+}
+
 /* General styles end here */
 
 /* Header styles start here */
 
 .headerLeft {
-    margin-left: 190px;
     padding-top: 186px;
     padding-bottom: 172px;
-    width: 350px;
-    padding-left: 90px;
 }
 
 .headerRight {
@@ -287,7 +290,7 @@ h1 {
 }
 
 .headerRight div:first-child {
-    padding-top: 20px;
+    padding-top: 30px;
     margin-right: 60px;
 }
 
@@ -298,12 +301,6 @@ h1 {
 .corporate .lineHL {
     right: 0;
     top: 0;
-}
-
-.corporateLeft {
-    margin-left: 190px;
-    width: 350px;
-    padding-left: 90px;
 }
 
 .corporateRight, .corporateLeft {
@@ -342,10 +339,8 @@ h1 {
 }
 
 .aboutLeft .content {
-    width: 350px;
     max-height: 600px;
-    padding: 230px 0 0 90px;
-    margin-left: 190px;
+    padding-top: 230px;
 }
 
 .aboutLeft p {
@@ -393,13 +388,13 @@ h1 {
     padding-right: 80px;
 }
 
-.logo ul li img {
-    width: 100%;
-}
-
 .logo ul li a:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+.logo ul li img {
+    width: 100%;
 }
 
 /* About section styles end here */
@@ -418,15 +413,13 @@ h1 {
 
 }
 
-
 @media only screen and (max-width: 1360px)  {
 
-    .headerLeft, .corporateLeft, .aboutLeft .content {
+    .leftCommon {
         padding-left: 50px;
         text-align: left;
         margin-left: 120px;
     }
-
 }
 
 @media only screen and (max-width: 1260px) {
@@ -464,13 +457,13 @@ h1 {
         max-width: none;
     }
 
-    .aboutLeft p {
+    .aboutLeft p, .aboutLeft .contact  {
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
     .aboutLeft .contact {
-        padding: 30px 0 30px 50px;
+        padding-left: 50px;
     }
 
     .aboutLeft .contact div {
@@ -503,10 +496,10 @@ h1 {
         padding-bottom: 0;
     }
 
-
     .logo ul {
         justify-content: space-evenly;
     }
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -520,7 +513,7 @@ h1 {
     }
 
     .headerRight div:last-child {
-        justify-content: flex-start;
+        align-items: flex-start;
     }
 
 }
@@ -553,6 +546,5 @@ h1 {
     }
 
 }
-
 
 /* Responsive styles end here */
