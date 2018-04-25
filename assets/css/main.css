@@ -192,6 +192,10 @@ h1 {
     align-items: center;
 }
 
+.alignFlexEnd {
+    align-items: flex-end;
+}
+
 .spaceBetween {
     justify-content: space-between;
 }
@@ -273,7 +277,7 @@ h1 {
     margin-left: 190px;
     padding-top: 186px;
     padding-bottom: 172px;
-    width: 300px;
+    width: 350px;
     padding-left: 90px;
 }
 
@@ -298,7 +302,7 @@ h1 {
 
 .corporateLeft {
     margin-left: 190px;
-    width: 300px;
+    width: 350px;
     padding-left: 90px;
 }
 
@@ -307,7 +311,7 @@ h1 {
 }
 
 .corporateLeft p {
-    max-width: 280px;
+    max-width: 240px;
     padding-top: 45px;
 }
 
@@ -338,10 +342,9 @@ h1 {
 }
 
 .aboutLeft .content {
-    width: 300px;
+    width: 350px;
     max-height: 600px;
-    padding-top: 230px;
-    padding-left: 90px;
+    padding: 230px 0 0 90px;
     margin-left: 190px;
 }
 
@@ -360,12 +363,11 @@ h1 {
 }
 
 .aboutRight .desc {
-    padding: 60px 0;
+    padding: 60px 0 60px 0;
 }
 
 .aboutLeft .contact {
-    padding-top: 230px;
-    padding-left: 144px;
+    padding: 230px 0 157px 144px;
 }
 
 .aboutLeft .contact div {
@@ -378,16 +380,13 @@ h1 {
 }
 
 .logo {
-    padding-top: 80px;
-    padding-bottom: 98px;
-    left: 490px;
     position: absolute;
-
+    z-index: -1;
+    min-width: 100%;
 }
 
 .logo ul {
-    padding-left: 130px;
-    padding-right: 110px;
+    padding: 80px 110px 98px 50px;
 }
 
 .logo ul li {
@@ -407,6 +406,19 @@ h1 {
 
 /* Responsive styles start here */
 
+@media only screen and (max-width: 1600px){
+
+    .logo ul {
+        padding-right: 30px;
+    }
+
+    .logo ul li {
+        padding-right: 40px;
+    }
+
+}
+
+
 @media only screen and (max-width: 1360px)  {
 
     .headerLeft, .corporateLeft, .aboutLeft .content {
@@ -415,24 +427,11 @@ h1 {
         margin-left: 120px;
     }
 
-    .logo {
-        left: 420px;
-    }
-
-    .logo ul {
-        padding-left: 80px;
-        padding-right: 70px;
-    }
-
-    .logo ul li {
-        padding-right: 50px;
-    }
-
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1260px) {
 
-    header, .corporate .container, .about {
+    header, .corporate, .about {
         flex-direction: column;
     }
 
@@ -448,19 +447,17 @@ h1 {
         padding-left: 50px;
     }
 
-    .corporateLeft, .corporateRight, .aboutLeft .content {
-        padding-top: 36px;
-        padding-bottom: 42px;
+    .corporateLeft, .corporateRight, .aboutLeft .content, .aboutRight {
+        padding: 30px 30px 30px 50px;
         justify-content: flex-start;
         text-align: left;
-        padding-left: 50px;
         margin-left: 0;
         width: 100%;
     }
 
     .corporateRight .desc {
         justify-content: flex-start;
-        padding-top: 25px;
+        padding: 25px 25px 25px 0;
     }
 
     .corporateLeft p {
@@ -473,8 +470,7 @@ h1 {
     }
 
     .aboutLeft .contact {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding: 30px 0 30px 50px;
     }
 
     .aboutLeft .contact div {
@@ -487,9 +483,8 @@ h1 {
     }
 
     .aboutRight {
-        padding-top: 30px;
-        justify-content: flex-start;
-        padding-left: 50px;
+        height: 55.3%;
+        align-items: flex-start;
     }
 
     .aboutRight h1 {
@@ -500,16 +495,64 @@ h1 {
         margin: 31px 0;
     }
 
-    .aboutRight .desc {
-        padding: 30px 0;
+    .aboutRight p, .aboutRight .desc {
+        padding-top: 30px;
     }
 
-    .logo {
-        left: 0;
-        width: 100%;
-        padding-top: 38px;
-        padding-bottom: 28px;
+    .aboutRight .desc {
+        padding-bottom: 0;
+    }
+
+
+    .logo ul {
+        justify-content: space-evenly;
     }
 }
+
+@media only screen and (max-width: 720px) {
+
+    .headerRight, .headerRight div:last-child {
+        flex-direction: column;
+    }
+
+    .headerRight .lineMd {
+        width: 22%;
+    }
+
+    .headerRight div:last-child {
+        justify-content: flex-start;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .corporate .lineHL {
+        width: 100%;
+    }
+
+    .corporateLeft .mainLineH {
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .aboutRight p {
+        font-size: 12px;
+    }
+
+    .logo ul {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .logo ul li:last-child {
+        padding-right: 0;
+    }
+
+}
+
 
 /* Responsive styles end here */
